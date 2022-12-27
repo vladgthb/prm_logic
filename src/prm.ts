@@ -39,6 +39,10 @@ export enum PersonnelEnum {
   'WAITER' = 'waiter',
 }
 
+/**
+ * @description - The person class, that contains all necessary props and methods that is needed for employee
+ *  availability status change and type.
+ */
 class Person {
   private isAvailable: boolean = true;
 
@@ -62,6 +66,9 @@ class Person {
   }
 }
 
+/**
+ * @description - The personnel class that initialize and contains all employees availability status
+ */
 class Personnel {
   private readonly employees: Person[] = [
     new Person(PersonnelEnum.DOUGH),
