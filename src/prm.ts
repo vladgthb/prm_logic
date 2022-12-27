@@ -217,8 +217,10 @@ const main = async () => {
 
   const endTime = new Date();
   const report = `\n\tOrders Completed at ${endTime.toUTCString()}. Total processing time is ${getPreparationTime(startTime, endTime)} s.\n
-    ${ordersJson.map((order, index) =>
-      `Total preparation time for order "${order.pizza_name}" ${preparationTimes[index][0]} s. and total processing time ${preparationTimes[index][1]} s.`).join('\n\t')}`;
+    ${ordersJson
+    .map((order, index) =>
+      `Total preparation time for order "${order.pizza_name}" is ${preparationTimes[index][0]}s. and total processing time is${preparationTimes[index][1]}s.`)
+    .join('\n\t')}`;
 
   console.log(report);
 }

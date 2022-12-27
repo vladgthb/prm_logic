@@ -34,6 +34,9 @@ npm i
 
 #### Running the app
 
+Before run the app, there is need to provide the input orders, for that need to modify input JSON file
+https://github.com/vladgthb/prm_logic/blob/main/src/orders.json
+
 ```bash
 npm run start
 ```
