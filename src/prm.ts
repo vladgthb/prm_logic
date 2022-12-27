@@ -223,7 +223,7 @@ const main = async () => {
   const preparationTimes = await Promise.all(ordersJson.map((order) => (new Prm(order, personnel).processOrder())));
 
   const endTime = new Date();
-  const report = `\n\tOrders Completed at ${endTime.toUTCString()}. Total processing time is ${getPreparationTime(startTime, endTime)} s.\n
+  const report = `\n\tOrders Completed at ${endTime.toUTCString()}. Total preparation time is ${getPreparationTime(startTime, endTime)} s.\n
     ${ordersJson
     .map((order, index) =>
       `Total preparation time for order "${order.pizza_name}" is ${preparationTimes[index][0]}s. and total processing time is${preparationTimes[index][1]}s.`)
