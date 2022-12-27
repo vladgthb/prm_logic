@@ -1,0 +1,18 @@
+[
+  {
+    "pizza_name": "my custom pizza 1",
+    "toppings": [ "onion", "paprika" ]
+  },
+  {
+    "pizza_name": "my custom pizza 3",
+    "toppings": [ "onion", "paprika", "souse" ]
+  },
+  {
+    "pizza_name": "my custom pizza 5",
+    "toppings": [ "onion", "paprika" ]
+  },
+  {
+    "pizza_name": "my custom pizza 2",
+    "toppings": [ "onion", "paprika" ]
+  }
+]
